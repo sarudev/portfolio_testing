@@ -9,6 +9,12 @@ export class SidebarComponent implements OnInit {
 
   constructor() { }
 
+  toggleSidebar () {
+    document.getElementById("sidebar-burger-w-500px")?.classList?.toggle("open")
+    document.getElementById("sidebar-background-w-500px")?.classList?.toggle("open")
+    document.getElementById("sidebar-sidebar-w-500px")?.classList?.toggle("open")
+  }
+
   ngOnInit(): void {
   }
 

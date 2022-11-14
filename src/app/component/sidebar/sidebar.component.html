@@ -1,17 +1,11 @@
-<link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-<button type="button" class="burger" id="sidebar-burger-w-500px" onclick="toggleSidebar()"></button>
+<button type="button" (click)="toggleSidebar()" class="burger" id="sidebar-burger-w-500px"
+    style="background-color: #242424;"></button>
 
-<script>
-
-document.getElementById("sidebar-burger-w-500px").onclick = () => document.body.classList.toggle("open")
-
-</script>
-
-<div class="background"></div>
-<aside class="sidebar">
+<div class="background" id="sidebar-background-w-500px"></div>
+<aside class="sidebar" id="sidebar-sidebar-w-500px">
     <button type="button">
         <i class="material-symbols-outlined">home</i>
         <span>Home</span>
